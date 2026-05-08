@@ -1,0 +1,47 @@
+[
+  {
+    "UserEmail": "bob.smith@widgets.io",
+    "UserName": "Bob Smith",
+    "Tool": "FIGMA",
+    "Capability": "UX",
+    "Role": "Full",
+    "GrantedAt": "2026-04-01T08:00:00Z",
+    "RevokedAt": "2026-04-01T08:15:00Z"
+  },
+  {
+    "UserEmail": "bob.smith@widgets.io",
+    "UserName": "Bob Smith",
+    "Tool": "FIGMA",
+    "Capability": "UX",
+    "Role": "Dev",
+    "GrantedAt": "2026-04-01T08:15:00Z",
+    "RevokedAt": "2026-04-01T08:25:00Z"
+  },
+  {
+    "UserEmail": "bob.smith@widgets.io",
+    "UserName": "Bob Smith",
+    "Tool": "FIGMA",
+    "Capability": "UX",
+    "Role": "Collab",
+    "GrantedAt": "2026-04-01T08:25:00Z",
+    "RevokedAt": null
+  },
+  {
+    "UserEmail": "bob.smith@widgets.io",
+    "UserName": "Bob Smith",
+    "Tool": "NEWRELIC",
+    "Capability": "MONITORING",
+    "Role": "Full Access",
+    "GrantedAt": "2026-04-02T10:00:00Z",
+    "RevokedAt": "2026-04-02T10:20:00Z"
+  },
+  {
+    "UserEmail": "bob.smith@widgets.io",
+    "UserName": "Bob Smith",
+    "Tool": "NEWRELIC",
+    "Capability": "MONITORING",
+    "Role": "Basic",
+    "GrantedAt": "2026-04-02T10:20:00Z",
+    "RevokedAt": null
+  }
+]

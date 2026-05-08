@@ -1,0 +1,13 @@
+{
+    "name": "dotnet-8",
+    "image": "mcr.microsoft.com/devcontainers/dotnet:8.0",
+    "features": {},
+    "customizations": {
+        "vscode": {
+            "extensions": [
+                "JakubKozera.csharp-dev-tools"
+            ]
+        }
+    },
+    "postCreateCommand": "dotnet --version"
+}

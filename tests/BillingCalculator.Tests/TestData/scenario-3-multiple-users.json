@@ -1,0 +1,83 @@
+[
+  {
+    "UserEmail": "alice.johnson@acme.com",
+    "UserName": "Alice Johnson",
+    "Tool": "FIGMA",
+    "Capability": "UX",
+    "Role": "Collab",
+    "GrantedAt": "2026-04-03T09:00:00Z",
+    "RevokedAt": "2026-04-03T17:00:00Z"
+  },
+  {
+    "UserEmail": "alice.johnson@acme.com",
+    "UserName": "Alice Johnson",
+    "Tool": "JIRA",
+    "Capability": "BACKLOG",
+    "Role": "",
+    "GrantedAt": "2026-04-01T08:00:00Z",
+    "RevokedAt": null
+  },
+  {
+    "UserEmail": "bob.smith@widgets.io",
+    "UserName": "Bob Smith",
+    "Tool": "FIGMA",
+    "Capability": "UX",
+    "Role": "Full",
+    "GrantedAt": "2026-04-01T10:00:00Z",
+    "RevokedAt": "2026-04-01T10:30:00Z"
+  },
+  {
+    "UserEmail": "bob.smith@widgets.io",
+    "UserName": "Bob Smith",
+    "Tool": "FIGMA",
+    "Capability": "UX",
+    "Role": "Dev",
+    "GrantedAt": "2026-04-01T10:30:00Z",
+    "RevokedAt": null
+  },
+  {
+    "UserEmail": "bob.smith@widgets.io",
+    "UserName": "Bob Smith",
+    "Tool": "JIRA",
+    "Capability": "BACKLOG",
+    "Role": "",
+    "GrantedAt": "2026-04-02T08:00:00Z",
+    "RevokedAt": "2026-04-02T08:00:15Z"
+  },
+  {
+    "UserEmail": "carol.white@example.org",
+    "UserName": "Carol White",
+    "Tool": "NEWRELIC",
+    "Capability": "MONITORING",
+    "Role": "Full Access",
+    "GrantedAt": "2026-04-10T12:00:00Z",
+    "RevokedAt": "2026-04-10T12:45:00Z"
+  },
+  {
+    "UserEmail": "carol.white@example.org",
+    "UserName": "Carol White",
+    "Tool": "NEWRELIC",
+    "Capability": "MONITORING",
+    "Role": "Basic",
+    "GrantedAt": "2026-04-10T12:45:00Z",
+    "RevokedAt": "2026-04-25T09:00:00Z"
+  },
+  {
+    "UserEmail": "carol.white@example.org",
+    "UserName": "Carol White",
+    "Tool": "FIGMA",
+    "Capability": "UX",
+    "Role": "View",
+    "GrantedAt": "2026-04-10T12:00:00Z",
+    "RevokedAt": null
+  },
+  {
+    "UserEmail": "carol.white@example.org",
+    "UserName": "Carol White",
+    "Tool": "SONARQUBE",
+    "Capability": "CODE_QUALITY",
+    "Role": "",
+    "GrantedAt": "2026-03-15T08:00:00Z",
+    "RevokedAt": "2026-03-20T08:00:00Z"
+  }
+]
