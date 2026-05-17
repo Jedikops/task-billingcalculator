@@ -49,7 +49,6 @@ public static class BillableAccessCalculator
 
         var billableAccessEntries = clumpedAccessPeriods.Select(p =>
         {
-
             var firstPeriod = p.First().AccessPeriod;
             var totalAccessDuration = p.Sum(i => (i.ClampedEnd - i.ClampedStart).Ticks);
             var accessByRoles = p.Where(i => !string.IsNullOrEmpty(i.AccessPeriod.Role))
