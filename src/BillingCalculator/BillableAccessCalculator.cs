@@ -53,14 +53,14 @@ public static class BillableAccessCalculator
             var firstPeriod = p.First().AccessPeriod;
             var totalAccessDuration = p.Sum(i => (i.ClampedEnd - i.ClampedStart).Ticks);
             var accessByRoles = p.Where(i => !string.IsNullOrEmpty(i.AccessPeriod.Role))
-            .GroupBy(i => i.AccessPeriod.Role!);
+            .ToLookup(i => i.AccessPeriod.Role ?? string.Empty);
 
             var roleHistory = accessByRoles
-            .ToDictionary(i => i.Key, j => TimeSpan.FromTicks(j.Sum(k => (k.ClampedEnd - k.ClampedStart).Ticks))) // Build a dictionary of Role => accumulated duration across all periods in the group.
+            //.ToDictionary(i => i.Key, j => TimeSpan.FromTicks(j.Sum(k => (k.ClampedEnd - k.ClampedStart).Ticks))) // Build a dictionary of Role => accumulated duration across all periods in the group.
             .Select(i => new RoleAccessSummary
             {
                 Role = i.Key,
-                Duration = i.Value
+                Duration = TimeSpan.FromTicks(i.Sum(k => (k.ClampedEnd - k.ClampedStart).Ticks))
             }).OrderByDescending(i => i.Duration).ToList();
 
             var highestRoleAndDuration = ToolRolePriority.HasRolePriority(firstPeriod.Tool) ? roleHistory.Where(i => ToolRolePriority.GetPriority(firstPeriod.Tool, i.Role) > 0 && (i.Duration >= minBillableRoleDuration))
