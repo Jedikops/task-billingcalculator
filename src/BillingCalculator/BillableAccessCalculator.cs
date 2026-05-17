@@ -53,7 +53,7 @@ public static class BillableAccessCalculator
             var firstPeriod = p.First().AccessPeriod;
             var totalAccessDuration = p.Sum(i => (i.ClampedEnd - i.ClampedStart).Ticks);
             var accessByRoles = p.Where(i => !string.IsNullOrEmpty(i.AccessPeriod.Role))
-            .ToLookup(i => i.AccessPeriod.Role!);
+            .ToLookup(i => i.AccessPeriod.Role!); // A Lookup<TKey,TElement> resembles a Dictionary<TKey,TValue>.
 
             var roleHistory = accessByRoles
             //.ToDictionary(i => i.Key, j => TimeSpan.FromTicks(j.Sum(k => (k.ClampedEnd - k.ClampedStart).Ticks))) // Build a dictionary of Role => accumulated duration across all periods in the group.
